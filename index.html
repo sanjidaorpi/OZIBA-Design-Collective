@@ -6,100 +6,179 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Oziba Design Collective</title>
 	<link rel="stylesheet" href="style.css">
-  
-  <script src="script.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <nav class="myNav">
-      <ul class="nav-wrapper">
-        <li class="nav-logo">
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <nav class="header-nav">
+      <div class="nav-left">
+        <a href="index.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </div>
+      
+      <div class="nav-center">
+        <div class="logo-container">
           <a href="index.html">
-            <img class="logo" src="images/logos.png" alt="Logo">
+            <img class="brand-logo-img" src="images/logos.png" alt="OZIBA Design Collective">
           </a>
-        </li>
-    
-        <div class="nav-right">
-          <li><a href="index.html">ABOUT</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="services.html">SERVICES</a></li>
         </div>
-      </ul>
-    </nav>    
+      </div>
+      
+      <div class="nav-right">
+        <a href="gallery.html">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Hero Slideshow -->
+  <section class="hero-section">
     <div class="slideshow-container">
       <div class="slide fade">
-        <img src="images/hi_light_.jpg">
+        <img src="images/hi_light_.jpg" alt="Wedding Design">
       </div>
       <div class="slide fade">
-        <img src="images/IMG_1866.JPG">
+        <img src="images/IMG_1866.JPG" alt="Event Styling">
       </div>
       <div class="slide fade">
-        <img src="images/IMG_6269.JPG">
+        <img src="images/IMG_6269.JPG" alt="Wedding Planning">
       </div>
     </div>
     
-</div> <!-- End of container -->
-    
-    <section class="philosophy-section">
-      <div class="content-wrapper">
-        <h2 class="section-title">Our Philosophy</h2>
-        <p class="section-text">
-          We believe design is a language—a way to express care, intention, and empathy...
-        </p>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2 class="hero-title">Creating Unforgettable Moments</h2>
+        <p class="hero-subtitle">Where dreams become reality, one celebration at a time</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="story-section">
-      <h2 class="section-title">Our Story</h2>
-      <p class="section-text">
-        Wedding planning should feel joyful, not overwhelming. With years of experience and a passion for perfection, our team crafts seamless, unforgettable celebrations that reflect your unique love story. We’re your trusted partners, creative problem-solvers, and biggest cheerleaders—all rolled into one.
-      </p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-decorative left-top">
+          <img src="images/leaf24.jpg" alt="Decorative Leaf">
+        </div>
+        <div class="about-text-content">
+          <h2 class="about-title">OUR PHILOSOPHY</h2>
+          <h3 class="about-subtitle">A WEDDING & EVENT DESIGN COLLECTIVE</h3>
+          <p class="about-text">
+            It's about more than just planning events—it's about creating experiences that tell your unique story. 
+            With years of expertise and an unwavering passion for perfection, we transform your vision into 
+            unforgettable celebrations that reflect your personality and exceed your expectations.
+          </p>
+          <p class="about-text">
+            From intimate gatherings to grand celebrations, we handle every detail with meticulous care, 
+            ensuring that your special day is not just beautiful, but truly extraordinary.
+          </p>
+        </div>
+        <div class="about-decorative right-bottom">
+          <img src="images/leaf25.jpg" alt="Decorative Leaf">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us-section">
+    <div class="container">
+      <div class="about-us-content">
+        <div class="about-us-image">
+          <img src="images/DRP-121.JPG" alt="About OZIBA Design Collective">
+        </div>
+        <div class="about-us-text">
+          <h2 class="section-title">About Us</h2>
+          <p class="about-us-description">
+            We are passionate event designers dedicated to creating unforgettable moments. 
+            With years of experience in the industry, we bring creativity, precision, and 
+            personalized attention to every celebration we design.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview Section -->
+  <section class="gallery-preview">
+    <div class="gallery-navigation">
+        <div class="set-numbers">
+          <p class="about-subtitle"><a href="services.html">Learn more about our services →</a></p>
+        </div>
+        
+      </div>
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/IMG_4614.jpg" alt="Wedding Design">
+        </div>
+        <div class="gallery-item">
+          <img src="images/IMG_7464.JPG" alt="Event Styling">
+        </div>
+        <div class="gallery-item">
+          <img src="images/IMG_2063.JPG" alt="Wedding Planning">
+        </div>
+      </div>
       
-    </section>
-    
-    <div class="footer-basic">
-      <footer class="footer-flex">
-        <!-- Right Column: Contact Info -->
-        <div class="footer-column">
-          <h4>Contact Us</h4>
-          <p><a href="mailto:ozibadesigncollective@gmail.com">MAIL</a></p>
-          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank">INSTAGRAM</a></p>
-        </div>
-
-        <div class="footer-column">
-          <ul class="footer-links">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-          </ul>
-        </div>
-      </footer>
-      <p class="copyright">OZIBA Design Collective © 2025</p>
+      
     </div>
-    
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="contact" class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p><a href="mailto:ozibadesigncollective@gmail.com"><span class="contact-icon"><img src="images/mail.png" alt="Email"></span> ozibadesigncollective@gmail.com</a></p>
+          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank"><span class="contact-icon"><img src="images/insta_logo.png" alt="Instagram"></span> @ozibadesigncollective</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <p class="copyright">&copy; 2025 OZIBA Design Collective. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      function showSlides() {
+        if (slides.length > 0) {
+          slides.forEach(slide => slide.classList.remove('active'));
+          slideIndex = (slideIndex + 1) % slides.length;
+          slides[slideIndex].classList.add('active');
+        }
+      }
+
+      // Initial slide
+      if (slides.length > 0) {
+        slides[0].classList.add('active');
+        setInterval(showSlides, 4000); // Change image every 4 seconds
+      }
+    });
+  </script>
 
 </body>
-<script>
-  let slideIndex = 0;
-  const slides = document.querySelectorAll('.slide');
-
-  function showSlides() {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].classList.add('active');
-  }
-
-  // Initial slide
-  slides[0].classList.add('active');
-  setInterval(showSlides, 4000); // Change image every 4 seconds
-</script>
-
 
 </html>

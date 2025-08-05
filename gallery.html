@@ -4,82 +4,92 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Oziba Design Collective</title>
-
+	<title>Oziba Design Collective - Gallery</title>
 	<link rel="stylesheet" href="style.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="my-container">
-    <nav class="myNav">
-        <ul class="nav-wrapper">
-          <li class="nav-logo">
-            <a href="index.html">
-              <img class="logo" src="images/logos.png" alt="Logo">
-            </a>
-          </li>
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <nav class="header-nav">
+      <div class="nav-left">
+        <a href="index.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </div>
       
-          <div class="nav-right">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-          </div>
-        </ul>
+      <div class="nav-center">
+        <div class="logo-container">
+          <a href="index.html">
+            <img class="brand-logo-img" src="images/logos.png" alt="OZIBA Design Collective">
+          </a>
+        </div>
+      </div>
+      
+      <div class="nav-right">
+        <a href="gallery.html">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+  </header>
 
-  </div> <!-- End of container -->
 
-  <div class="album">
-    <div class="responsive-container-block bg">
-        <div class="responsive-container-block img-cont">
-            <img class="img" src="images/DRP-121.JPG">
-            <img class="img" src="images/hi_light_.jpg">
-            <img class="img img-last" src="images/IMG_0262.JPG">
-            <img class="img" src="images/IMG_7464.JPG">
-            <img class="img" src="images/hi_light_.jpg">
-            <img class="img img-last" src="images/IMG_0262.JPG">
-        </div>
-        <div class="responsive-container-block img-cont">
-            <img class="img img-big" src="images/highlgiht.jpg">
-            <img class="img img-big img-last" src="images/hiliiiiigh.jpg">
-            <img class="img img-big" src="images/hilgiht.jpg">
-            <img class="img img-big img-last" src="images/hiliiiiigh.jpg">
-        </div>
-        <div class="responsive-container-block img-cont">
-            <img class="img" src="images/IMG_1866.JPG">
-            <img class="img" src="images/IMG_2063.JPG">
-            <img class="img" src="images/IMG_4614.jpg">
-            <img class="img" src="images/IMG_0225.HEIC">
-            <img class="img" src="images/IMG_2063.JPG">
-        </div>
-    </div>
-</div>
 
-<div class="footer-basic">
-      <footer class="footer-flex">
-        <!-- Right Column: Contact Info -->
-        <div class="footer-column">
+  <!-- Gallery Grid -->
+  <section class="gallery-main">
+    <div class="album">
+      <div class="responsive-container-block bg">
+          <div class="responsive-container-block img-cont">
+              <img class="img" src="images/DRP-121.JPG">
+              <img class="img" src="images/hi_light_.jpg">
+              <img class="img img-last" src="images/IMG_0262.JPG">
+              <img class="img" src="images/IMG_7464.JPG">
+              <img class="img" src="images/jewish_wedding/IMG_3749.JPG">
+          </div>
+          <div class="responsive-container-block img-cont">
+              <img class="img img-big" src="images/highlgiht.jpg">
+              <img class="img img-big img-last" src="images/hiliiiiigh.jpg">
+              <img class="img img-big" src="images/hilgiht.jpg">
+              <img class="img img-big img-last" src="images/highlight.JPG">
+          </div>
+          <div class="responsive-container-block img-cont">
+              <img class="img" src="images/IMG_1866.JPG">
+              <img class="img" src="images/IMG_2063.JPG">
+              <img class="img" src="images/IMG_4614.jpg">
+              <img class="img" src="images/IMG_0225.HEIC">
+              <img class="img" src="images/jewish_wedding/IMG_3764.JPG">
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
           <h4>Contact Us</h4>
-          <p><a href="mailto:ozibadesigncollective@gmail.com">MAIL</a></p>
-          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank">INSTAGRAM</a></p>
+          <p><a href="mailto:ozibadesigncollective@gmail.com"><span class="contact-icon"><img src="images/mail.png" alt="Email"></span> ozibadesigncollective@gmail.com</a></p>
+          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank"><span class="contact-icon"><img src="images/insta_logo.png" alt="Instagram"></span> @ozibadesigncollective</a></p>
         </div>
+        
+        <div class="footer-section">
+          <p class="copyright">&copy; 2025 OZIBA Design Collective. All rights reserved.</p>
+        </div>
+      </div>
+  </footer>
 
-        <div class="footer-column">
-          <ul class="footer-links">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-          </ul>
-        </div>
-      </footer>
-      <p class="copyright">OZIBA Design Collective © 2025</p>
-</div>
+  <script src="script.js"></script>
 
 </body>
 

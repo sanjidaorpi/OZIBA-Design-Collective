@@ -12,28 +12,130 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="my-container">
-    <nav class="myNav">
-        <ul class="nav-wrapper">
-          <li class="nav-logo">
-            <a href="index.html">
-              <img class="logo" src="images/logos.png" alt="Logo">
-            </a>
-          </li>
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <nav class="header-nav">
+      <div class="nav-left">
+        <a href="index.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </div>
       
-          <div class="nav-right">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-          </div>
-        </ul>
+      <div class="nav-center">
+        <div class="logo-container">
+          <a href="index.html">
+            <img class="brand-logo-img" src="images/logos.png" alt="OZIBA Design Collective">
+          </a>
+        </div>
+      </div>
+      
+      <div class="nav-right">
+        <a href="gallery.html">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+  </header>
 
-  </div> <!-- End of container -->
+
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-header">
+          <h2 class="about-title">OUR SERVICES</h2>
+          <h3 class="about-subtitle">COMPREHENSIVE WEDDING & EVENT PLANNING</h3>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Wedding Planning</h3>
+            <p>Complete wedding planning and coordination services, from initial consultation to the final celebration. We handle every detail so you can focus on your special day.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3>Event Design</h3>
+            <p>Custom event design and styling that reflects your unique vision. From intimate gatherings to grand celebrations, we bring your dreams to life.</p>
+          </div>
+          
+          <div class="service-card">
+            <h3>Day-of Coordination</h3>
+            <p>Professional day-of coordination to ensure your event runs smoothly. We handle all the logistics so you can enjoy every moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+      <div class="reviews-container">
+        <h2 class="reviews-title">Hear From Our Couples</h2>
+        <p class="reviews-subtitle">Because every love story deserves a perfect celebration.</p>
+        
+        <div class="reviews-grid">
+          <div class="review-item">
+            <div class="review-image">
+              <img src="images/IMG_1866.JPG" alt="Sarah & James Wedding">
+            </div>
+            <div class="review-content">
+              <div class="review-number">REVIEW NO. 1 OF 3</div>
+              <blockquote>"Oziba Design Collective turned our chaotic vision into a fairy tale. They handled every crisis (even my last-minute dress panic!) with grace and humor."</blockquote>
+              <div class="review-author">SARAH & JAMES</div>
+            </div>
+          </div>
+          
+          <div class="review-item">
+            <div class="review-image">
+              <img src="images/IMG_6269.JPG" alt="Lauren's Wedding">
+            </div>
+            <div class="review-content">
+              <div class="review-number">REVIEW NO. 2 OF 3</div>
+              <blockquote>"Where do we even begin? You'll often hear from people that planning a wedding, while fun, is also so stressful. However, my husband and I never once felt stressed knowing we had Oziba there with us every step of the way."</blockquote>
+              <div class="review-author">LAUREN S.</div>
+            </div>
+          </div>
+          
+          <div class="review-item">
+            <div class="review-image">
+              <img src="images/hi_light_.jpg" alt="Michael & Emily Wedding">
+            </div>
+            <div class="review-content">
+              <div class="review-number">REVIEW NO. 3 OF 3</div>
+              <blockquote>"The attention to detail was incredible. Every element was thoughtfully curated and perfectly executed. Our guests are still talking about how beautiful everything was."</blockquote>
+              <div class="review-author">MICHAEL & EMILY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p><a href="mailto:ozibadesigncollective@gmail.com"><span class="contact-icon"><img src="images/mail.png" alt="Email"></span> ozibadesigncollective@gmail.com</a></p>
+          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank"><span class="contact-icon"><img src="images/insta_logo.png" alt="Instagram"></span> @ozibadesigncollective</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <p class="copyright">&copy; 2025 OZIBA Design Collective. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
