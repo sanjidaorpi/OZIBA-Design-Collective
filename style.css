@@ -48,7 +48,6 @@ p {
   background-color: #8a9e85;
   z-index: 1000;
   padding: 0.2rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-nav {
