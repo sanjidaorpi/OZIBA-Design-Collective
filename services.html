@@ -11,9 +11,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -44,10 +42,16 @@
         <span></span>
         <span></span>
       </div>
+      
+      <!-- Unified Mobile Menu -->
+      <div class="mobile-menu">
+        <a href="index.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+      </div>
     </nav>
   </header>
-
-
 
     <!-- Services Section -->
     <section class="services-section">
@@ -56,21 +60,37 @@
           <h2 class="about-title">OUR SERVICES</h2>
           <h3 class="about-subtitle">COMPREHENSIVE WEDDING & EVENT PLANNING</h3>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3>Wedding Planning</h3>
-            <p>Complete wedding planning and coordination services, from initial consultation to the final celebration. We handle every detail so you can focus on your special day.</p>
-          </div>
-          
-          <div class="service-card">
-            <h3>Event Design</h3>
-            <p>Custom event design and styling that reflects your unique vision. From intimate gatherings to grand celebrations, we bring your dreams to life.</p>
-          </div>
-          
-          <div class="service-card">
-            <h3>Day-of Coordination</h3>
-            <p>Professional day-of coordination to ensure your event runs smoothly. We handle all the logistics so you can enjoy every moment.</p>
-          </div>
+        <div class="services-grid services-cards-grid">
+          <a href="build_service.html" class="service-card-link">
+            <article class="service-card-visual">
+              <div class="service-card-visual__image">
+                <img src="images/planning_service.jpg" alt="Full service wedding planning">
+              </div>
+              <div class="service-card-visual__body">
+                <h3>Wedding Planning Services</h3>
+              </div>
+            </article>
+          </a>
+          <a href="planning_service.html" class="service-card-link">
+            <article class="service-card-visual">
+              <div class="service-card-visual__image">
+                <img src="images/design_service.JPG" alt="Partial planning">
+              </div>
+              <div class="service-card-visual__body">
+                <h3>Event Design and Florals</h3>
+              </div>
+            </article>
+          </a>
+          <a href="design_service.html" class="service-card-link">
+            <article class="service-card-visual">
+              <div class="service-card-visual__image">
+                <img src="images/build_service.jpg" alt="Day of coordination">
+              </div>
+              <div class="service-card-visual__body">
+                <h3>Build Your Own</h3>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
@@ -118,22 +138,30 @@
       </div>
     </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="main-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>Contact Us</h4>
-          <p><a href="mailto:ozibadesigncollective@gmail.com"><span class="contact-icon"><img src="images/mail.png" alt="Email"></span> ozibadesigncollective@gmail.com</a></p>
-          <p><a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank"><span class="contact-icon"><img src="images/insta_logo.png" alt="Instagram"></span> @ozibadesigncollective</a></p>
-        </div>
-        
-        <div class="footer-section">
-          <p class="copyright">&copy; 2025 OZIBA Design Collective. All rights reserved.</p>
-        </div>
+<!-- Footer -->
+<footer id="contact" class="main-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>OZIBA DESIGN COLLECTIVE</h4>
+        <p><a href="mailto:ozibadesigncollective@gmail.com"><span class="contact-icon"> info@ozibadesigncollective.com</a></p>
+          <p>
+            <a href="tel:+13476516170">347.651.6170</a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/ozibadesigncollective/?hl=en" target="_blank">
+              <span class="contact-icon">
+                <img src="images/insta_logo.png" alt="Instagram">
+              </span>
+            </a>
+          </p>
+      </div>
+      
+      <div class="footer-section">
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 

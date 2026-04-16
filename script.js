@@ -1,18 +1,16 @@
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const navLeft = document.querySelector('.nav-left');
-  const navRight = document.querySelector('.nav-right');
+  const mobileMenu = document.querySelector('.mobile-menu');
   
-  if (mobileMenuToggle) {
+  if (mobileMenuToggle && mobileMenu) {
     mobileMenuToggle.addEventListener('click', function() {
-      navLeft.classList.toggle('active');
-      navRight.classList.toggle('active');
+      mobileMenu.classList.toggle('show');
       
       // Animate hamburger menu
       const spans = mobileMenuToggle.querySelectorAll('span');
       spans.forEach((span, index) => {
-        if (navLeft.classList.contains('active')) {
+        if (mobileMenu.classList.contains('show')) {
           if (index === 0) span.style.transform = 'rotate(45deg) translate(5px, 5px)';
           if (index === 1) span.style.opacity = '0';
           if (index === 2) span.style.transform = 'rotate(-45deg) translate(7px, -6px)';
@@ -24,11 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-left a, .nav-right a');
-    navLinks.forEach(link => {
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
       link.addEventListener('click', function() {
-        navLeft.classList.remove('active');
-        navRight.classList.remove('active');
+        mobileMenu.classList.remove('show');
         const spans = mobileMenuToggle.querySelectorAll('span');
         spans.forEach(span => {
           span.style.transform = 'none';
@@ -113,10 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   window.addEventListener('scroll', function() {
     if (window.scrollY > 100) {
-      header.style.background = 'rgba(255, 255, 255, 0.98)';
       header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
     } else {
-      header.style.background = 'rgba(255, 255, 255, 0.95)';
       header.style.boxShadow = 'none';
     }
   });
