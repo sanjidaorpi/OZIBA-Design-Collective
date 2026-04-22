@@ -1564,7 +1564,11 @@ p {
 }
 
 @media (max-width: 768px) {
-  .service-detail-section {
-    padding: 2.5rem 0 3rem;
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .service-detail-section ul {
+    padding-left: 1.25rem;
   }
 }
