@@ -1554,4 +1554,17 @@ p {
   .review-image img {
     max-height: min(48vh, 280px);
   }
+  
+}
+
+@media (max-width: 480px) {
+  .service-detail-section .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-detail-section {
+    padding: 2.5rem 0 3rem;
+  }
 }
